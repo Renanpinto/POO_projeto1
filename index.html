@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projeto 1 - POO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <a class="navbar-brand" href="#myPage">P.O.O.</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+    	<li><a href="#grupo">GRUPO</a></li>
+        <li><a href="#servlets">SERVLETS</a></li>
+        
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Container Sobre o Grupo -->
+<div id="grupo" class="container text-center">
+  <h3>SOBRE O GRUPO</h3>
+  <p><em>4º ADS NOTURNO</em></p>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Allan</strong></p><br>
+      <img src="allan2.jpg" class="img-circle person" alt="allan" width="255" height="255">
+      <div id="demo">
+      <p><strong>RA: </strong>12904816130--</p>
+       <p><i class="fa fa-linkedin"></i> /-------- </p>
+        <p><i class="fa fa-github"></i> -------- </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Marjorie</strong></p><br>
+      <img src="marjorie.jpg" class="img-circle person" alt="marjorie" width="255" height="255">
+      <div id="demo2">
+      <p><strong>RA: </strong>12904816130--</p>
+       <p><i class="fa fa-linkedin"></i> /-------- </p>
+        <p><i class="fa fa-github"></i> -------- </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Renan</strong></p><br>
+      <img src="renan.jpg" class="img-circle person" alt="Renan" width="255" height="255">
+      
+      <div id="demo3">
+        <p><strong>RA: </strong>1290481613036</p>
+        <p><i class="fa fa-linkedin"></i> /renan-pinto</p>
+        <p><i class="fa fa-github"></i> -------- </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+     
+
+<!-- Container Servlets -->
+<div class="modal-header">
+  <h3 class="text-center" style="color:#d5d5d5">SERVLETS</h3>
+  </div>
+<div class="container">
+    <ul class="nav nav-tabs">
+    <br/><br/>
+      <li class="active"><a data-toggle="tab" href="#home">Juros Simples</a></li>
+      <li><a data-toggle="tab" href="#menu1">Juros composto</a></li>
+      <li><a data-toggle="tab" href="#menu2">Teste</a></li>
+    </ul>
+
+  <div class="tab-content" id="servlets">
+    <div id="home" class="tab-pane fade in active">
+  	  <h2>Juros Simples</h2>
+      <p>O regime de juros será simples quando o percentual de juros incidir apenas sobre o valor principal. Sobre os juros gerados a cada período não incidirão novos juros.</p>
+      <p>Valor Principal ou simplesmente principal é o valor inicial emprestado ou aplicado, antes de somarmos os juros. Transformando em fórmula temos:
+      <br/>
+      <p><strong><span>J = P . i . n</strong></span></p>
+      <p>Onde:</p>
+	     <p>J = juros</p>
+	     <p>P = principal (capital)</p>
+	     <p>i = taxa de juros</p>
+	     <p>n = número de períodos</p>
+   
+      <p>Ao somarmos os juros ao valor principal temos o montante.</p>
+      <p>Montante = Principal + Juros</p>
+      <p>Montante = Principal + ( Principal x Taxa de juros x Número de períodos )</p>
+	     <br/> 
+      <p><strong><span>M = P . ( 1 + ( i . n ) )</strong></span></p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Juros composto</h2>
+      <p>O regime de juros compostos é o mais comum no sistema financeiro e portanto, o mais útil para cálculos de problemas do dia a dia. Os juros gerados a cada período são incorporados ao principal para o cálculo dos juros do período seguinte.</p>
+ 
+      <p>Chamamos de capitalização o momento em que os juros são incorporados ao principal.</p>
+ 
+      <p>Após três meses de capitalização, temos:</p>
+      <p> 1º mês: M =P.(1 + i)</p>
+      <p>2º mês: o principal é igual ao montante do mês anterior: M = P x (1 + i) x (1 + i) </p>
+      <p>3º mês: o principal é igual ao montante do mês anterior: M = P x (1 + i) x (1 + i) x (1 + i)</p>
+      <p>Simplificando, obtemos a fórmula:</p>
+  
+      <p><span><strong> M = P . (1 +  i)n</strong></span></p>
+ 
+      <p>Importante: a taxa i tem que ser expressa na mesma medida de tempo de n, ou seja, taxa de juros ao mês para n meses.</p>
+      <p>Para calcularmos apenas os juros basta diminuir o principal do montante ao final do período:</p>
+  
+      <p><span><strong>J = M - P</strong></span></p>
+    </div>
+    </div>
+   </div>
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <p>ADS 4º ciclo noturno</p> 
+</footer>
+</body>
+</html>
