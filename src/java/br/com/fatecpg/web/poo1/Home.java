@@ -134,7 +134,7 @@ public class Home extends HttpServlet {
             out.println("</div>");
             out.println("<ul class=\"nav navbar-nav navbar-right\">");
             out.println("<li><a href=\"#grupo\">GRUPO</a></li>");
-            out.println("<li><a href=\"#servlets\">SERVLETS</a></li>");
+            out.println("<li><a href=\"#servlets\">JUROS</a></li>");
 
             out.println("</ul>");
             out.println("</div>");
@@ -144,59 +144,60 @@ public class Home extends HttpServlet {
             out.println("<div id=\"grupo\" class=\"container text-center\">");
             out.println("<h3>SOBRE O GRUPO</h3>");
             out.println("<p><em>4º ADS NOTURNO</em></p>");
-            out.println("<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>");
             out.println("<br>");
+
             out.println("<div class=\"row\">");
             out.println("  <div class=\"col-sm-4\">");
-            out.println("    <p class=\"text-center\"><strong>Allan</strong></p><br>");
-            out.println("    <img src=\"allan2.jpg\" class=\"img-circle person\" alt=\"allan\" width=\"255\" height=\"255\">");
+            out.println("    <p class=\"text-center\"><strong>Allan Almeida</strong></p><br>");
+            out.println("    <img src=\"allan1.JPG\" class=\"img-circle person\" alt=\"allan\" width=\"255\" height=\"255\">");
             out.println("    <div id=\"demo\">");
             out.println("    <p><strong>RA: </strong>12904816130--</p>");
-            out.println("     <p><i class=\"fa fa-linkedin\"></i> /-------- </p>");
-            out.println("      <p><i class=\"fa fa-github\"></i> -------- </p>");
+            out.println("     <p><i class=\"fa fa-linkedin\"></i> /allan-almeida-771238149 </p>");
+            out.println("      <p><i class=\"fa fa-github\"></i> bllackz </p>");
             out.println("    </div>");
             out.println("  </div>");
             out.println("  <div class=\"col-sm-4\">");
-            out.println("    <p class=\"text-center\"><strong>Marjorie</strong></p><br>");
-            out.println("    <img src=\"marjorie.jpg\" class=\"img-circle person\" alt=\"marjorie\" width=\"255\" height=\"255\">");
+            out.println("    <p class=\"text-center\"><strong>Marjorie Ribeiro</strong></p><br>");
+            out.println("    <img src=\"marjorie.JPG\" class=\"img-circle person\" alt=\"marjorie\" width=\"255\" height=\"255\">");
             out.println("    <div id=\"demo2\">");
             out.println("    <p><strong>RA: </strong>12904816130--</p>");
-            out.println("     <p><i class=\"fa fa-linkedin\"></i> /-------- </p>");
-            out.println("      <p><i class=\"fa fa-github\"></i> -------- </p>");
+            out.println("     <p><i class=\"fa fa-linkedin\"></i> /marjorie-maria-ribeiro-macedo-127342100 </p>");
+            out.println("      <p><i class=\"fa fa-github\"></i> Marjorie31 </p>");
             out.println("    </div>");
             out.println("  </div>");
             out.println("  <div class=\"col-sm-4\">");
-            out.println("    <p class=\"text-center\"><strong>Renan</strong></p><br>");
-            out.println("    <img src=\"renan.jpg\" class=\"img-circle person\" alt=\"Renan\" width=\"255\" height=\"255\">");
+            out.println("    <p class=\"text-center\"><strong>Renan Pinto</strong></p><br>");
+            out.println("    <img src=\"renan.JPG\" class=\"img-circle person\" alt=\"Renan\" width=\"255\" height=\"255\">");
 
             out.println("    <div id=\"demo3\">");
             out.println("      <p><strong>RA: </strong>1290481613036</p>");
             out.println("      <p><i class=\"fa fa-linkedin\"></i> /renan-pinto</p>");
-            out.println("      <p><i class=\"fa fa-github\"></i> -------- </p>");
+            out.println("      <p><i class=\"fa fa-github\"></i> Renanpinto </p>");
             out.println("    </div>");
-
             out.println("  </div>");
+           
+
             out.println("  </div>");
             out.println("</div>");
-
-//<!-- Container Servlets -->
-            out.println("<div class=\"modal - header\">");
-            out.println("<h3 class=\"text - center\" style=\"color:#d5d5d5\">SERVLETS</h3>");
-            out.println("<h3>servlets</h3>");
+            out.println("</div>");
+//<!-- Container Juros -->
+            out.println("<div class=\"modal-header\" id=\"servlets\">");
+            out.println("<h3 class=\"text-center\" style=\"color:#d5d5d5\">JUROS</h3>");
             out.println("</div>");
             out.println("<div class=\"container\">");
+
             out.println("<ul class=\"nav nav-tabs\">");
-            out.println("<br/><br/>");
             out.println("<li class=\"active\"><a data-toggle=\"tab\" href=\"#home\">Juros Simples</a></li>");
             out.println("<li><a data-toggle=\"tab\" href=\"#menu1\">Juros composto</a></li>");
             out.println("</ul>");
-            out.println("<div class=\"tab - content\" id=\"servlets\">");
-            out.println("<div id=\"home\" class=\"tab - pane fade in active\">");
+
+            out.println("<div class=\"tab-content\" id=\"servlets\">");
+            out.println("<div id=\"home\" class=\"tab-pane fade in active\">");
             out.println("<h2><a href=\"JurosSimples\">Juros Simples</a></h2>");
             out.println("<p>O regime de juros será simples quando o percentual de juros incidir apenas sobre o valor principal. Sobre os juros gerados a cada período não incidirão novos juros.</p>");
             out.println("<p>Valor Principal ou simplesmente principal é o valor inicial emprestado ou aplicado, antes de somarmos os juros. Transformando em fórmula temos:");
             out.println("<br/>");
-            out.println("<p><strong><span>J = P . i . n</strong></span></p>");
+            out.println("<p class=\"text-center\"><strong><span><u>J = P . i . n</u></strong></span></p>");
             out.println("<p>Onde:</p>");
             out.println("<p>J = juros</p>");
             out.println("<p>P = principal (capital)</p>");
@@ -206,9 +207,10 @@ public class Home extends HttpServlet {
             out.println("<p>Montante = Principal + Juros</p>");
             out.println("<p>Montante = Principal + ( Principal x Taxa de juros x Número de períodos )</p>");
             out.println("<br/> ");
-            out.println("<p><strong><span>M = P . ( 1 + ( i . n ) )</strong></span></p>");
+            out.println("<p class=\"text-center\"><strong><u><span>M = P . ( 1 + ( i . n ) )</u></strong></span></p>");
             out.println("</div>");
-            out.println("<div id=\"menu1\" class=\"tab - pane fade\">");
+            out.println("<div id=\"menu1\" class=\"tab-pane fade\">");
+
             out.println("<h2><a href=\"JurosComposto\">Juros composto</a></h2>");
             out.println("<p>O regime de juros compostos é o mais comum no sistema financeiro e portanto, o mais útil para cálculos de problemas do dia a dia. Os juros gerados a cada período são incorporados ao principal para o cálculo dos juros do período seguinte.</p>");
             out.println("<p>Chamamos de capitalização o momento em que os juros são incorporados ao principal.</p>");
@@ -217,10 +219,10 @@ public class Home extends HttpServlet {
             out.println("<p>2º mês: o principal é igual ao montante do mês anterior: M = P x (1 + i) x (1 + i) </p>");
             out.println("<p>3º mês: o principal é igual ao montante do mês anterior: M = P x (1 + i) x (1 + i) x (1 + i)</p>");
             out.println("<p>Simplificando, obtemos a fórmula:</p>");
-            out.println("<p><span><strong> M = P . (1 +  i)n</strong></span></p>");
+            out.println("<p class=\"text-center\"><span><strong><u> M = P . (1 +  i)n</u></strong></span></p>");
             out.println("<p>Importante: a taxa i tem que ser expressa na mesma medida de tempo de n, ou seja, taxa de juros ao mês para n meses.</p>");
             out.println("<p>Para calcularmos apenas os juros basta diminuir o principal do montante ao final do período:</p>");
-            out.println("<p><span><strong>J = M - P</strong></span></p>");
+            out.println("<p class=\"text-center\"><span><strong><u>J = M - P</u></strong></span></p>");
             out.println("</div>");
             out.println("</div>");
             out.println("</div>");
@@ -228,7 +230,7 @@ public class Home extends HttpServlet {
 //<!-- Footer -->
             out.println("<footer class=\"text-center\">");
             out.println("  <p>ADS 4º ciclo noturno</p> ");
-            out.println("</footer>*/");
+            out.println("</footer>");
             out.println("</body>");
             out.println("</html>");
         }
