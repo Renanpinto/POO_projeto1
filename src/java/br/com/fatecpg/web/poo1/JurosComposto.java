@@ -7,6 +7,7 @@ package br.com.fatecpg.web.poo1;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DecimalFormat;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -40,7 +41,48 @@ public class JurosComposto extends HttpServlet {
             out.println("<title>Servlet JurosComposto</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1><a href=\"Home\">Voltar</a></h1>");
+            out.println("<h1><a href=\"Home\">Voltar</a></h1>");  
+            out.println("<h3>Cálculo de Juros Composto</h3>");            
+            out.println("<form method='get' action='JurosComposto'>");
+            out.println("<p>Valor da aplicação (capital) :</p>");
+            out.println("<input type='text' name='c'/>");              
+            out.println("<p>Juros (em porcentagem):</p>");
+            out.println("<input type='text' name='i'/>");             
+            out.println("<p>Tempo (em meses):</p>");
+            out.println("<input type='text' name='n'/>"); 
+            out.println("<br>");out.println("<br>");
+            out.println("<input type='submit' value='calcular'/>");
+            out.println("<br>");out.println("<br>");
+            out.println("</form>");
+            
+            double c,n, i,m;
+            DecimalFormat df = new DecimalFormat("###,##0.00");
+                
+            if(request.getParameter("c") != null){                
+            try{
+               
+                c = Double.parseDouble(request.getParameter("c"));
+                i= Double.parseDouble(request.getParameter("i"));
+                n= Double.parseDouble(request.getParameter("n"));
+                
+                out.println("<table border='1'>");
+                out.println("<tr>");
+                out.println("<th>Mês</th>");
+                out.println("<th>Montante mensal</th>");
+                out.println("</tr>");
+            
+                int x;
+                for(x=1;x<=n;x++){
+                    m=c*(1+(i/100));
+                    out.printf("<tr><td>"+x+"</td><td>R$ "+df.format(m)+"</td></tr>");
+            
+                    c=m;
+            };
+            
+            }catch(Exception ex){
+                out.println("<h4>Parâmetro inválido</h4>");
+            }}
+            
             out.println("</body>");
             out.println("</html>");
         }
