@@ -151,7 +151,7 @@ public class Home extends HttpServlet {
             out.println("    <p class=\"text-center\"><strong>Allan Almeida</strong></p><br>");
             out.println("    <img src=\"allan1.JPG\" class=\"img-circle person\" alt=\"allan\" width=\"255\" height=\"255\">");
             out.println("    <div id=\"demo\">");
-            out.println("    <p><strong>RA: </strong>12904816130--</p>");
+            out.println("    <p><strong>RA: </strong>1290481613002</p>");
             out.println("     <p><i class=\"fa fa-linkedin\"></i> /allan-almeida-771238149 </p>");
             out.println("      <p><i class=\"fa fa-github\"></i> bllackz </p>");
             out.println("    </div>");
@@ -160,7 +160,7 @@ public class Home extends HttpServlet {
             out.println("    <p class=\"text-center\"><strong>Marjorie Ribeiro</strong></p><br>");
             out.println("    <img src=\"marjorie.JPG\" class=\"img-circle person\" alt=\"marjorie\" width=\"255\" height=\"255\">");
             out.println("    <div id=\"demo2\">");
-            out.println("    <p><strong>RA: </strong>12904816130--</p>");
+            out.println("    <p><strong>RA: </strong>1290481613029</p>");
             out.println("     <p><i class=\"fa fa-linkedin\"></i> /marjorie-maria-ribeiro-macedo-127342100 </p>");
             out.println("      <p><i class=\"fa fa-github\"></i> Marjorie31 </p>");
             out.println("    </div>");
