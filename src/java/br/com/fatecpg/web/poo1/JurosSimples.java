@@ -177,13 +177,13 @@ public class JurosSimples extends HttpServlet {
                     
                     j = (p*i*n)/100;
                     m = j+p;
-              
+                 java.text.DecimalFormat ab = new java.text.DecimalFormat("###,##0.00");
               
               
               
              
-                    out.printf("<h4><strong> Valor do juros é: R$"+j+"</strong></h4>");
-                    out.printf("<h4><strong> Valor do montante é: R$"+m+"</strong></h4>");
+                    out.printf("<h4><strong> Valor do juros é: R$"+ab.format(j)+"</strong></h4>");
+                    out.printf("<h4><strong> Valor do montante é: R$"+ab.format(m)+"</strong></h4>");
                   
                 }
                 

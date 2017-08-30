@@ -211,7 +211,7 @@ public class Home extends HttpServlet {
             out.println("</div>");
             out.println("<div id=\"menu1\" class=\"tab-pane fade\">");
 
-            out.println("<h2><a href=\"JurosComposto\">Juros composto</a></h2>");
+            out.println("<h2><a href=\"JurosComposto\">Juros Composto</a></h2>");
             out.println("<p>O regime de juros compostos é o mais comum no sistema financeiro e portanto, o mais útil para cálculos de problemas do dia a dia. Os juros gerados a cada período são incorporados ao principal para o cálculo dos juros do período seguinte.</p>");
             out.println("<p>Chamamos de capitalização o momento em que os juros são incorporados ao principal.</p>");
             out.println("<p>Após três meses de capitalização, temos:</p>");
